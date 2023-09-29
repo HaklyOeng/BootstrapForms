@@ -3,60 +3,171 @@
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BootStrap Form: Essential Responsive Forms</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BootStrap Form: Essential Responsive Forms</title>
 
-    <!--BootStrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!--Style-->
-    <link href="/CSS/site.css" rel="stylesheet" />
+  <!--BootStrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!--Style-->
+  <link href="/CSS/site.css" rel="stylesheet" />
+  <link href="/CSS/invoice.css" rel="stylesheet" />
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="/index.html">BS Forms</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/contact.html">Contact Form</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/addressbook.html">Address Book</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/invoice.html">Invoice</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </header>
-
-    <main>
-        
-    </main>
-
-    <footer class="container-fluid  bg-dark text-light py-3">
-        <div class="row row-cols-1 row-cols-md-3">
-            <div class="col text-md-start">Built by Hakly</div>
-            <div class="col text-md-center">Bootstrap Forms</div>
-            <div class="col text-md-end">helihaung@gmail.com</div>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html">BS Forms</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html">Contact Form</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/addressbook.html">Address Book</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/invoice.html">Invoice</a>
+            </li>
+          </ul>
         </div>
-    </footer>
-    <!--BootStrap JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container border p-3 px-5">
+    <div class="row d-flex justify-content-evenly">
+        <div class="col text-end">
+          <button type="submit" class="btn btn-primary btn-sm">Print this page</button>
+        </div>
+      <div class="row">
+        <div class="col-12 col-md-8">
+          <img src="/img/IdeaFoundryLogo.svg" class="img-fluid" />
+        </div>
+        <div class="col-12 col-md-4 d-flex justify-content-end align-items-center">
+          <h1>Invoice</h1>
+        </div>
+      </div>
+      <div class="row  border-top border-bottom mt-3 mb-3">
+        <div class="col-12 col-md-6">
+          <article><b>Date:</b> 05/12/2019</article>
+        </div>
+        <div class="col-12 col-md-6">
+          <article class="text-md-end"><b>Invoice No::</b> 19005</article>
+        </div>
+      </div>
+      <div class="row border-5">
+        <div class="col-12 col-md-6">
+          <article><b>Invoice To:</b></article>
+        </div>
+        <div class="col-12 col-md-6 text-md-end order-1 order-md-0">
+          <article><b>Pay To:</b></article>
+        </div>
+        <div class="col-12 col-md-6">
+          <article>Mark Davis</article>
+        </div>
+        <div class="col-12 col-md-6 text-md-end order-1 order-md-0">
+          <article>Idea Foundry,Inc.</article>
+        </div>
+        <div class="col-12 col-md-6">
+          <article>3333 AI Davis Way</article>
+        </div>
+        <div class="col-12 col-md-6 text-md-end order-1 order-md-0">
+          <article>2705 N.Enterprise St</article>
+        </div>
+        <div class="col-12 col-md-6">
+          <article>Las Vegas, NV 89118</article>
+        </div>
+        <div class="col-12 col-md-6 text-md-end order-1 order-md-0">
+          <article>Kernersvile, NC 27284</article>
+        </div>
+        <div class="col-12 text-md-end order-2">
+          <article>contact@IdeaFoundryInc.com</article>
+        </div>
+      </div>
+    </div>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th style="width:50%" class="bg-dark text-light"><b>Service</b></th>
+          <th style="width:20%" class="bg-dark text-light"><b>Description</b></th>
+          <th style="width:5%" class="bg-dark text-light"><b>Rate</b></th>
+          <th style="width:5%" class="bg-dark text-light"><b>QTY</b></th>
+          <th style="width:20%" class="bg-dark text-light"><b>Amoun</b>t</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border-start">Design</td>
+          <td>Web Design</td>
+          <td>$60.00</td>
+          <td>10</td>
+          <td class="border-end">$600.00</td>
+        </tr>
+        <tr>
+          <td class="border-start">Development</td>
+          <td class="border-start border-end">Website Development</td>
+          <td class="border-end">$150.00</td>
+          <td class="border-end">10</td>
+          <td class="border-end">$1500.00</td>
+        </tr>
+        <tr>
+          <td class="border-start">Deployment</td>
+          <td class="border-start">Deployment and Hosting</td>
+          <td class="border-start border-end">$450.00</td>
+          <td class="border-start border-end">1</td>
+          <td class="border-start border-end">$450.00</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4" class="text-md-end border-start border-end"><b>Sub Total:</b></td>
+          <td class="border-start border-end">$2550.00</td>
+        </tr>
+        <tr>
+          <td colspan="4" class="text-end border-start border-end"><b>Tax:</b></td>
+          <td class="border-start border-end">$0.00</td>
+        </tr>
+        <tr>
+          <td colspan="4" class="text-end border-start border-end"><b>Total:</b></td>
+          <td class="border-start border-end">$2550.00</td>
+        </tr>
+      </tfoot>
+    </table>
+    <div class="row">
+      <div class="col-12 text-center">
+        <article><b>Note:</b> This is computer generated recipt and does not require physical signature.</article>
+      </div>
+    </div>
+    <div class="text-center mt-3">
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-secondaryr" disabled>Print</button>
+        <button type="button" class="btn btn-secondary" disabled>Download</button>
+      </div>
+    </div>
+    </div>
+  </main>
+
+  <footer class="container-fluid  bg-dark text-light py-3">
+    <div class="row row-cols-1 row-cols-md-3">
+      <div class="col text-md-start">Built By Coder Foundry ©2022</div>
+      <div class="col text-md-center">Essential Bootstrap Forms</div>
+      <div class="col text-md-end">info@coderfoundry.com</div>
+    </div>
+  </footer>
+  <!--BootStrap JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
