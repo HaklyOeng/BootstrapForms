@@ -1,0 +1,14 @@
+@page {
+    margin: 0;
+}
+
+@media print {
+    @page { margin: 0;}
+    body { margin: 0;}
+    header,
+    footer,
+    #Printthispage {
+        display: none;
+    }
+    
+}
